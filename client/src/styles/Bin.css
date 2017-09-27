@@ -1,0 +1,101 @@
+.input-field-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-form {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 0 0;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.price-form {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 0 0;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.input {
+  width: 500px;
+  height: 65px;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0 10px 0 10px;
+  border-color: red;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.label {
+  font-size: 28px;
+  margin: 0 0 5px 25px;
+  font-weight: bold;
+}
+
+.add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 525px;
+  height: 65px;
+  margin: 35px 0 0 0;
+  border-radius: 5px;
+  background-color: #40f99b;
+  cursor: pointer;
+  color: black;
+}
+
+.button-parent {
+  display: flex;
+}
+
+.save-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 65px;
+  margin: 35px 0 0 0;
+  border-radius: 5px;
+  background-color: #40ff9b;
+  cursor: pointer;
+  margin: 15px 65px 0 65px;
+}
+
+.delete-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 65px;
+  margin: 35px 0 0 0;
+  border-radius: 5px;
+  background-color: #d8d8d8;
+  cursor: pointer;
+  color: black;
+  margin: 15px 65px 0 65px;
+}
+
+.edit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 65px;
+  margin: 35px 0 0 0;
+  border-radius: 5px;
+  background-color: #d8d8d8;
+  cursor: pointer;
+  margin: 15px 65px 0 65px;
+}
+
+.edit-button-parent {
+  display: flex;
+  justify-content: center;
+}
