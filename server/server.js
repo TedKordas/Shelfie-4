@@ -4,8 +4,7 @@ const express = require('express'),
   cors = require('cors'),
   massive = require('massive'),
   bodyParser = require('body-parser'),
-  config = require('./config/config.js'),
-  PORT = process.env.PORT || config.PORT;
+  PORT = process.env.PORT;
 
 const app = express();
 
@@ -68,9 +67,8 @@ app.delete('/shelf/:shelf/:bin', (req, res, next) => {
   });
 });
 
-massive(
-  process.env.massiveConnectionString || config.massiveConnectionString
-).then(db => {
+massive(process.env.MASSIVE_CONNECTION_STRING).then(db => {
   app.set('db', db);
-  app.listen(PORT, () => console.log(`listening on port ${PORT}`));
 });
+
+app.listen(PORT, () => console.log(`listening on port ${PORT}`));
